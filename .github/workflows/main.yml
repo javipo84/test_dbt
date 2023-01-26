@@ -1,1 +1,10 @@
 
+- name: dbt action
+  # You may pin to the exact commit or the version.
+  # uses: mwhitaker/dbt-action@d242164e0f8b6fbd0fadf8ef0779ad8d3c8450a4
+  uses: mwhitaker/dbt-action@v1.3.0
+  with:
+    # dbt command
+    dbt_command: # default is dbt run --profiles-dir .
+    # dbt project folder. Defaults to .
+    dbt_project_folder: # optional, default is .
